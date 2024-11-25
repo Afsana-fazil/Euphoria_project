@@ -3,60 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Euphoria Website</title>
+    <title>Euphoria</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts/core sans c/stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" sizes="60x60" href="images/euphoria.png" >
+    <meta property="og:image" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 </head>
 <body>
     <section id="home">
         <header>
             <section class="wrapper">
-                <section class="content">
+                <div class="head">
                     <h1 class="left">
-                        <a href="#"><img src="assets/Logo.svg" alt="logo"></a>
+                        <img src="images/Logo.svg" alt="logo">
                     </h1>
-                    <nav class="middle">
-                        <ul>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Men</a></li>
-                            <li><a href="#">Women</a></li>
-                            <li><a href="#">Combos</a></li>
-                            <li><a href="#">Joggers</a></li>
-                        </ul>
-                    </nav>
-                    <button class="search">
-                        <img src="assets/search.svg" alt="search">
-                        <input type="text" placeholder="Search">
-                    </button>
-                    <span class="icons">
-                        <a href="#"><img src="assets/wishlist.svg" alt="wishlist"></a>
-                        <a href="#"><img src="assets/account.svg" alt="account"></a>
-                        <a href="#"><img src="assets/cart.svg" alt="cart"></a>
-                    </span>
-                </section>  <!-- #home > header > .wrapper > .content -->
-            </section> <!-- #home > header > .wrapper -->
-        </header> <!-- #home > header -->
 
+                    <div class="main">
+                        <nav class="middle">
+                            <ul>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Combos</a></li>
+                                <li><a href="#">Joggers</a></li>
+                            </ul>
+                        </nav>
+        
+                        <div class="search">
+                            <img src="images/search.svg" alt="search">
+                            <input type="text" placeholder="search" id="search">
+                        </div>
+        
+                        <div class="right">
+                            <ul>
+                                <li><a href="#"><img src="images/wishlist.svg" alt="wishlist"></a></li>
+                                <li><a href="#"><img src="images/account.svg" alt="image"></a></li>
+                                <li><a href="#"><img src="images/cart.svg" alt="image"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu">
+                            <form action="">
+                                <select name="" id="menu">
+                                    <option value="menu">Menu</option>
+                                    <option value="en">Shop</option>
+                                    <option value="fr">Men</option>
+                                    <option value="ar">Women</option>
+                                    <option value="fr">Combos</option>
+                                    <option value="ar">Joggers</option>
+                                </select>
+                            </form>
+                        </div>
+        
+                    </div>
+                </div>
+            </section> <!-- header .wrapper  -->
+        </header>
+    
         <section id="spotlight">
             <section class="wrapper">
-                <div class="container">
-                    <img src="assets/left-arrow-bold.svg" alt="left-arrow-bold">
-                    <div class="content-box wrapper">
+                <div class="content">
+                    <img src="images/left-arrow-bold.svg" alt="left-arrow">
+                    <div class="left wrapper">
                         <h5>T-Shirt / Tops</h5>
-                        <h1>Summer <br> Value Pack</h1>
-                        <h4>cool / colorful / comfy</h4>
+                        <h2>Summer <br> Value Pack</h2>
+                        <p>cool / colorful / comfy</p>
                         <a href="#" class="button">Shop Now</a>
                     </div>
-                    <img src="assets/right-arrow-bold.svg" alt="right-arrow-bold">
+                    <img src="images/right-arrow-bold.svg" alt="right-arrow">
                 </div>
-            </section> <!-- #spotlight > .wrapper -->
+    
+                <div class="slide">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                </div>
+            </section> <!-- #spotlight > .wrapper  -->
         </section> <!-- #spotlight -->
 
     </section> <!-- #home -->
-
+    
     <section id="deals">
         <section class="wrapper">
             <div class="container">
@@ -64,14 +90,14 @@
                     <h6>Low Price</h6>
                     <h2>High Coziness</h2>
                     <h3>UPTO 50% OFF</h3>
-                    <h6><a href="#">Explore Items</a></h6>
+                    <a href="#" class="link">Explore Items</a>
                 </div>
-    
+
                 <div class="item two">
                     <h6>Beyoung Presents</h6>
                     <h2>Breezy Summer <br> Style</h2>
                     <h3>UPTO 50% OFF</h3>
-                    <h6><a href="#">Explore Items</a></h6>
+                    <a href="#" class="link">Explore Items</a>
                 </div>
             </div>
         </section> <!-- #deals > .wrapper -->
@@ -80,40 +106,33 @@
     <section id="arrivals">
         <section class="wrapper">
             <div class="top">
+                <img src="images/Rectangle 21.png" alt="image">
                 <h3>New Arrival</h3>
             </div>
+
             <div class="bottom">
-                <img src="assets/arrow-left.svg" alt="arrow-left">
+                <img class="arrow" src="images/arrow-left.svg" alt="left-arrow">
 
-                <div class="item">
-                    <a href="#">
-                        <img src="assets/img-1.jpg" alt="img-1">
-                        <h4>Knitted Joggers</h4>
-                    </a>
-                </div>
+                <ul>
+                    <li>
+                        <img src="images/img-1.jpg" alt="image">
+                        <small>Knitted Joggers</small>
+                    </li>
+                    <li>
+                        <img src="images/img-3.jpg" alt="image">
+                        <small>Full Sleeve</small>
+                    </li>
+                    <li>
+                        <img src="images/img-4.jpg" alt="image">
+                        <small>Active T-Shirts</small>
+                    </li>
+                    <li>
+                        <img src="images/img-2.jpg" alt="image">
+                        <small>Urban Shirts</small>
+                    </li>
+                </ul>
 
-                <div class="item">
-                    <a href="#">
-                        <img src="assets/img-3.jpg" alt="img-3">
-                        <h4>Full Sleeve</h4>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="#">
-                        <img src="assets/img-4.jpg" alt="img-4">
-                        <h4>Active T-Shirts</h4>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="#">
-                        <img src="assets/img-2.jpg" alt="img-2">
-                        <h4>Urban Shirts</h4>
-                    </a>
-                </div>
-
-               <img src="assets/arrow-right.svg" alt="arrow-right">
+                <img class="arrow" src="images/arrow-right.svg" alt="right-arrow">
             </div>
         </section> <!-- #arrivals > .wrapper -->
     </section> <!-- #arrivals -->
@@ -121,220 +140,220 @@
     <section id="fashion">
         <section class="wrapper">
             <div class="items">
-                <div class="left">
-                    <div class="content-box">
-                        <h1>WE MADE YOUR EVERYDAY FASHION BETTER!</h1>
-                        <h4>In our journey to improve everyday fasion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</h4>
-                        <a href="#" class="button">Shop Now</a>
-                    </div>
+                <div class="content">
+                    <h2>WE MADE YOUR EVERYDAY <br> FASHION BETTER!</h2>
+                    <p>In our journey to improve everyday fasion, euphoria presents
+                     EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+                    <a href="#" class="button">Shop Now</a>
                 </div>
-                <div class="right">
-
+                <div class="img-container">
+                    <img src="images/bg-5.jpg" alt="bg-5">
                 </div>
             </div>
         </section> <!--(#fashion > .wrapper)-->
     </section> <!--(#fashion)-->
 
-    <section id="categoriesformen">
+    <section id="men">
         <section class="wrapper">
             <div class="top">
+                <img src="images/Rectangle 21.png" alt="image">
                 <h3>Categories For Men</h3>
             </div>
             <div class="items">
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-5.jpg" alt="img-5">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-5.jpg" alt="img-5"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Shirts</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-6.jpg" alt="img-6">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-6.jpg" alt="img-6"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Printed T-Shirts</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-7.jpg" alt="img-7">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-7.jpg" alt="img-7"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Plain T-Shirts</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-8.jpg" alt="img-8">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-8.jpg" alt="img-8"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Polo T-Shirts</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-9.jpg" alt="img-9">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-9.jpg" alt="img-9"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Hoodies & Sweetshirt</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-10.jpg" alt="img-10">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-10.jpg" alt="img-10"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Jeans</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-1.jpg" alt="img-1">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/Rectangle 22.png" alt="Activewear"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Activewear</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-11.jpg" alt="img-11">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-11.jpg" alt="img-11"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Boxers</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
-                        </small>
-                        
-                    </a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                        </small>                
+                    </div>
                 </div>
 
             </div>
-        </section> <!-- #categoriesformen > .wrapper -->
-    </section> <!-- #categoriesformen -->
+        </section> <!-- #men > .wrapper -->
+    </section> <!-- #men -->
 
-    <section id="categoriesforwomen">
+    <section id="women">
         <section class="wrapper">
             <div class="top">
+                <img src="images/Rectangle 21.png" alt="image">
                 <h3>Categories For Women</h3>
             </div>
             <div class="items">
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-12.jpg" alt="img-12">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-12.jpg" alt="img-12"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Hoodies & Sweetshirt</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-13.jpg" alt="img-13">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-13.jpg" alt="img-13"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Coats & Parkas</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-14.jpg" alt="img-14">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-14.jpg" alt="img-14"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Tees & T-Shirt</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="item">
-                    <a href="#" class="main">
-                        <img src="assets/img-15.jpg" alt="img-15">
-                    </a>
-                    <a href="#">
+                    <div class="img-container">
+                        <a href="#"><img src="images/img-15.jpg" alt="img-15"></a>
+                    </div>
+                    <div class="item-info">
                         <span class="content">
                             <h4>Boxers</h4>
                             <a href="#" class="button">Explore Now!</a>
                         </span>
                         <small>
-                            <a href="#"><img src="assets/arrow-right.svg" alt="arrow-right" class="arrow"></a>
+                            <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" class="arrow"></a>
                         </small>
-                    </a>
+                    </div>
                 </div>
             </div>
 
-        </section> <!--( #categoriesforwomen > .wrapper )-->
-    </section> <!--( #categoriesforwomen )-->
+        </section> <!--( #women > .wrapper )-->
+    </section> <!--( #women )-->
 
     <section id="brand">
         <section class="wrapper">
@@ -345,19 +364,19 @@
                 </div>
                 <ul>
                     <li>
-                        <a href="#"><img src="assets/nike.jpg" alt="nike"></a>
+                        <a href="#"><img src="images/nike.jpg" alt="nike"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="assets/H&M.jpg" alt="H&M"></a>
+                        <a href="#"><img src="images/H&M.jpg" alt="H&M"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="assets/levis.jpg" alt="levis"></a>
+                        <a href="#"><img src="images/levis.jpg" alt="levis"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="assets/USPA.jpg" alt="USPA"></a>
+                        <a href="#"><img src="images/USPA.jpg" alt="USPA"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="assets/puma.jpg" alt="puma"></a>
+                        <a href="#"><img src="images/puma.jpg" alt="puma"></a>
                     </li>
                 </ul>
             </div>
@@ -367,64 +386,72 @@
     <section id="limelight">
         <section class="wrapper">
             <div class="top">
+                <img src="images/Rectangle 21.png" alt="image">
                 <h3>In The Limelight</h3>
             </div>
-            <div class="items">
-                <div class="item">
-                    <a href="#">
-                        <img src="assets/img-16.jpg" alt="img-16" class="main">
-                        <img src="assets/wishlist.svg" alt="wishlist" class="wishlist">
-                    </a>
-                    <a href="#">
-                        <span class="content">
-                            <h4>Black Sweatshirt with....</h4>
-                            <p>Jhanvi's Brand</p>
-                        </span>
-                        <a href="#"class="price">$123.00</a>
-                    </a>
-                </div>
 
-                <div class="item">
-                    <a href="#">
-                        <img src="assets/img-17.jpg" alt="img-17" class="main">
-                        <img src="assets/wishlist.svg" alt="wishlist" class="wishlist">
-                    </a>
-                    <a href="#">
-                        <span class="content">
-                            <h4>Line Pattern Black H...</h4>
-                            <p>AS's Brand</p>
-                        </span>
-                        <a href="#"class="price">$37.00</a>
-                    </a>
-                </div>
+            <div class="products">
+                <ul>
+                    <li>
+                        <div class="img-container">
+                            <img class="main" src="images/img-16.jpg" alt="img">
+                            <img class="wishlist" src="images/wishlist2.png" alt="img">
+                        </div>
 
-                <div class="item">
-                    <a href="#">
-                        <img src="assets/img-18.jpg" alt="img-18" class="main">
-                        <img src="assets/wishlist.svg" alt="wishlist" class="wishlist">
-                    </a>
-                    <a href="#">
-                        <span class="content">
-                            <h4>Black Shorts</h4>
-                            <p>MM'S Brand</p>
-                        </span>
-                        <a href="#"class="price">$37.00</a>
-                    </a>
-                </div>
+                        <div class="content">
+                            <span>
+                                <h4>Black Sweatshirt with...</h4>
+                                <p>Jhanvi's Brand</p>
+                            </span>
+                            <button>$123.00</button>
+                        </div>
+                    </li>
 
-                <div class="item">
-                    <a href="#">
-                        <img src="assets/img-19.jpg" alt="img-19" class="main">
-                        <img src="assets/wishlist.svg" alt="wishlist" class="wishlist">
-                    </a>
-                    <a href="#">
-                        <span class="content">
-                            <h4>Levender Hoodie with...</h4>
-                            <p>Nike's Brand</p>
-                        </span>
-                        <a href="#"class="price">$119.00</a>
-                    </a>
-                </div>
+                    <li>
+                        <div class="img-container">
+                            <img class="main" src="images/img-17.jpg" alt="img">
+                            <img class="wishlist" src="images/wishlist2.png" alt="img">
+                        </div>
+
+                        <div class="content">
+                            <span>
+                                <h4>Line Pattern Black H...</h4>
+                                <p>AS's Brand</p>
+                            </span>
+                            <button>$37.00</button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-container">
+                            <img class="main" src="images/img-18.jpg" alt="img">
+                            <img class="wishlist" src="images/wishlist2.png" alt="img">
+                        </div>
+
+                        <div class="content">
+                            <span>
+                                <h4>Black Shorts</h4>
+                                <p>MM'S Brand</p>
+                            </span>
+                            <button>$37.00</button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-container">
+                            <img class="main" src="images/img-19.jpg" alt="img">
+                            <img class="wishlist" src="images/wishlist2.png" alt="img">
+                        </div>
+
+                        <div class="content">
+                            <span>
+                                <h4>Levender Hoodie with...</h4>
+                                <p>Nike's Brand</p>
+                            </span>
+                            <button>$119.00</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section> <!-- #limelight > .wrapper -->
     </section> <!-- #limelight -->
@@ -432,75 +459,87 @@
     <section id="feedback">
         <section class="wrapper">
             <div class="top">
+                <img src="images/Rectangle 21.png" alt="image">
                 <h3>Feedback</h3>
             </div>
-            <div class="container">
-                <div class="item">
-                    <div class="img-container">
-                        <img src="assets/span-1.svg" alt="span-1">
-                        <span>
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/Vector.png" alt="Vector">
-                            <img src="assets/Vector-star.png" alt="Vector-star">
-                        </span>
-                    </div>
-
-                    <div class="content">
-                        <h4>Floyd Miles</h4>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                             Velit offical consequat duis enim velit mollit.<br/> Exercitation veniam 
-                             consiquat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit
-                             aliqua dolor do amet sint. Ventil official consequat duits enim veilt mollit.
-                             Exercitation veniam consequat sunt nostrund amet.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="img-container">
-                        <img src="assets/span-2.svg" alt="span-2">
-                        <span>
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/Vector-star.png" alt="Vector-star">
-                        </span>
-                    </div>
-
-                    <div class="content">
-                        <h4>Ronald Richards</h4>
-                        <p> ullamco est sit aliqua dolor do amet sint. Velit offical consequat 
-                            duis enim velit mollit. Exercitation veniam consiquat sunt nostrud amet. 
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Ventil official consequat duits enim veilt mollit. Exercitation veniam 
-                            consequat sunt nostrund amet.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="img-container">
-                        <img src="assets/span-3.svg" alt="span-3">
-                        <span>
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/star.svg" alt="star">
-                            <img src="assets/Vector.png" alt="Vector">
-                            <img src="assets/Vector-star.png" alt="Vector-star">
-                        </span>
-                    </div>
-
-                    <div class="content">
-                        <h4>Savannah Nguyen</h4>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                             Velit offical consequat duis enim velit mollit.<br/> Exercitation veniam 
-                             consiquat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit
-                             aliqua dolor do amet sint. Ventil official consequat duits enim veilt mollit.
-                             Exercitation veniam consequat sunt nostrund amet.</p>
-                    </div>
-                </div>
                 
+            <div class="feedback-list">
+                <ul>
+                    <li>
+                        <div class="img-container">
+                            <img src="images/span-1.svg" alt="picture" class="profile"/>
+                            <div class="rating">
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/Vector_half.png" alt="star-img"/>
+                                <img src="images/Vector.png" alt="star-img"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>Floyd Miles</h3>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sint. Velit officia consequat duis enim velit
+                                mollit. <br> Exercitation veniam consequat sunt nostrud amet. Amet
+                                minim mollit non deserunt ullamco est sit aliqua dolor do
+                                amet sint. Velit officia consequat duis enim velit mollit.
+                                Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div> 
+                    </li>
+
+                    <li>
+                        <div class="img-container">
+                            <img src="images/span-2.svg" alt="picture" class="profile"/>
+                            <div class="rating">
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/Vector.png" alt="star-img"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>Ronald Richards</h3>
+                            <p>
+                                ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam
+                                consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img-container">
+                            <img src="images/span-3.svg" alt="picture" class="profile"/>
+                            <div class="rating">
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/star.svg" alt="star-img"/>
+                                <img src="images/Vector_half.png" alt="star-img"/>
+                                <img src="images/Vector.png" alt="star-img"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>Savannah Nguyen</h3>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sint. Velit officia consequat duis enim velit
+                                mollit. <br> Exercitation veniam consequat sunt nostrud amet. Amet
+                                minim mollit non deserunt ullamco est sit aliqua dolor do
+                                amet sint. Velit officia consequat duis enim velit mollit.
+                                Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bottom">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </section> <!-- #feedback > .wrapper -->
     </section> <!-- #feedback -->
@@ -518,7 +557,7 @@
                         <li><a href="#">Career</a></li>
                     </ul>
                 </div>
-
+    
                 <div class="item">
                     <h3>Company</h3>
                     <ul>
@@ -529,68 +568,54 @@
                         <li><a href="#">Media</a></li>
                     </ul>
                 </div>
-
+    
                 <div class="item">
                     <h3>More Info</h3>
                     <ul>
-                        <li><a href="#">Term and Conditions</a></li>
-                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Shipping Policy</a></li>
                         <li><a href="#">Sitemap</a></li>
                     </ul>
                 </div>
-
+    
                 <div class="item">
                     <h3>Location</h3>
                     <ul>
-                        <li><a href="#">Support@eupharia.in</a></li>
-                        <li><a href="#">Eklingpura Chouraha,Ahmedabad Main Road</a></li>
-                        <li><a href="#">(NH 8 - Near Mahadev Hotel)Udaipur,India-313002</a></li>
+                        <li><a href="mailto:Support@eupharia.in">Support@eupharia.in</a></li>
+                        <li><a href="#">Eklingpura Chouraha, Ahmedabad Main Road</a></li>
+                        <li><a href="#">(NH 8 - Near Mahadev Hotel) Udaipur, India-313002</a></li>
                     </ul>
                 </div>
             </div>
-
+    
             <div class="middle">
                 <div class="social">
-                    <a href="#"><img src="assets/facebook.svg" alt="facebook" class="fb"></a>
-                    <a href="#"><img src="assets/instagram.svg" alt="instagram" class="ig"></a>
-                    <a href="#"><img src="assets/twitter.svg" alt="twitter" class="tw"></a>
-                    <a href="#"><img src="assets/linkedin.svg" alt="linkedin" class="in"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="images/twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="images/linkedin.svg" alt="linkedin"></a>
                 </div>
-
+    
                 <div class="download">
                     <h3>Download The App</h3>
-                    <div class="items">
-                        <div class="item">
-                            <img src="assets/playstore.svg" alt="playstore">
-                            <span>
-                                <h6>android app on</h6>
-                                <h4>Google Play</h4>
-                            </span>
-                        </div>
-    
-                        <div class="item">
-                            <img src="assets/phone.svg" alt="phone">
-                            <span>
-                                <h6>Available on the</h6>
-                                <h4>App Store</h4>
-                            </span>
-                        </div>
+                    <div class="app-buttons">
+                        <img src="images/playstore.png" alt="image">
+                        <img src="images/phone.png" alt="image">
                     </div>
                 </div>
             </div>
-
+    
             <div class="bottom">
                 <span class="top">
                     <h3>Popular Categories</h3>
-                    <a href="#"><img src="assets/arrow-down.svg" alt="arrow-down"></a>
+                    <a href="#"><img src="images/arrow-down.svg" alt="arrow-down"></a>
                 </span>
-                <p>Copyright &copy; 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+                <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
             </div>
-        </section> <!-- footer > .wrapper -->
-    </footer>   <!-- footer -->
+        </section>
+    </footer>
+
 </body>
 </html>
-
-
 
